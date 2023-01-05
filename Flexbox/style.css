@@ -1,0 +1,35 @@
+.container{
+    background-color: yellow;
+    border: 2px solid gray;
+    display: flex;
+    height: 500px;
+    gap: 10px;           /* between child */
+    flex-direction: row;
+    justify-content: center; /* horizonatlly */ 
+    align-items: center;     /* vertically */
+    flex-wrap: wrap;
+    flex-flow: row wrap;      /* direction & wrap */
+    align-content: space-evenly;
+}
+
+.items{
+    background-color: blue;
+    margin: 20px;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.item1{
+    order: 1;
+    
+}
+
+.item2{
+    flex-grow:1;
+    /* flex: 0 0 200px; flex-grow flex-shrink flex-basis */
+}
+
+.item3{
+    flex-grow:2;
+}
